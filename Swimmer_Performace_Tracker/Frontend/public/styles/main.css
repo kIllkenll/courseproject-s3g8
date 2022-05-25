@@ -1,0 +1,370 @@
+body {
+    background: #DDDDDD;
+    height: 100vh;
+}
+
+.navbar {
+    background-color: #800000;
+    color: white;
+}
+
+.head{
+    color:wheat !important;
+
+}
+
+#qtTable{
+    margin-top:75px;
+}
+
+.page-container {
+    margin-top: 75px;
+}
+#pcLabel{
+    text-align: center;
+    font-family: oxygen;
+}
+
+#qtBtn{
+   
+    margin-left: 500px;
+}
+
+#meetname{
+    margin-left: 500px;
+}
+tr, th{
+    font-family: oxygen;
+}
+.hastext{
+    font-family: oxygen;
+}
+
+#progressChartctn{
+    margin-left: -80px;
+}
+#mainPage{
+    height: 100%;
+}
+.container{
+    height: 100%;
+    padding-left: 0;
+    margin-right: auto;
+}
+
+.chartHolder{
+    height: 100%;
+}
+
+#improvement{
+    margin-top: 10px;
+}
+
+.row{
+   height:50%;
+   justify-content: center;
+    display:flex;
+
+}
+.open-button {
+    background-color:blue;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    /* right: 28px; */
+    width: 280px;
+  }
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;
+    bottom: 0;
+    right: 15px;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .tBtn {
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+
+  #raceDoc{
+      width: 1000px;
+  }
+
+  #searchContainer{
+      
+    height: 30%;
+  }
+  
+  .raceDocu{
+      background-color: white;
+      width: 300px;
+      height: 300px;
+  }
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+.raceinp{
+    margin-bottom: 45px;
+}
+
+.bmd-form-group .custom-file-control, .bmd-form-group .form-control, .bmd-form-group input::placeholder, .bmd-form-group label {
+    line-height: 1;
+    width:200px;
+}
+#regBtn{
+    background-color: blue;
+    color:white;
+
+}
+
+#logout{
+    margin-top: 100px;
+    height: 50px;
+    
+}
+
+#logoutbtn{
+    background-color: blue; 
+    color:white;
+}
+.inp{
+    width: 100px;
+}
+
+
+#pass{
+    margin-top: 25px;
+}
+.bmd-form-group [class*=" bmd-label"], .bmd-form-group [class^=bmd-label] {
+    margin-bottom: 20px;
+    pointer-events: none;
+    transition: all .3s ease;
+}
+
+.bmd-form-group [class*=" bmd-label"], .bmd-form-group [class^=bmd-label] {
+    /* position: absolute; */
+    pointer-events: none;
+    transition: all .3s ease;
+}
+
+#usr, #pwd{
+    width:250px;
+}
+
+
+.l{
+    font-size: 15px;
+}
+.logBtn{
+    margin-top:25px;
+    height: 40px;
+    width: 100px;
+    margin-left: 200px;
+}
+.homepageBtn{
+    margin-top: 200px;
+    height:200px;
+    width:auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.img-fluid, .img-thumbnail {
+    max-width: 100%;
+    height: 96px;
+}
+
+
+.swimmerInfo{
+    margin-bottom: 10px;
+    display:flex;
+    justify-content: center;
+    
+}
+
+.card-body{
+    height: 400px;
+}
+.btnDiv {
+    height: 240px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #DDDDDD;
+    background-clip: border-box;
+    box-shadow:none;
+}
+
+.card-subtitle{
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+    font-family: "Oxygen";
+    font-weight: 600;
+}
+
+.card-subtitle:hover {
+    color: red;
+  }
+
+
+  .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+
+
+  #title{
+      height: 50px;
+  }
+
+  select{
+      text-align: center;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  #chartContainer{
+      display: none;
+  }
+
+
+  #goNext{
+    /* margin: auto;
+    width: 50%;
+    float: right;
+    padding: 10px; */
+    float: right;
+    margin-right: 20px;
+    text-align: center;
+  }
+
+
+  #btnLabel{
+      margin-right: 20px;
+  }
+  #changeViewBtn{
+      background-color: black;
+      color:white
+  }
+ #datahubPage{
+     width: 100vw;
+     height: 100%;
+ }
+
+ #datahubPage2{
+    width: 100vw;
+     height: 100vh;
+ }
+
+ #searchContainer {
+    height: 100px;
+}
+  #comparisonTable{
+      margin-left: 5rem;
+      
+  }
+
+  td{
+      margin-right: 20px;
+  }
+
+
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }

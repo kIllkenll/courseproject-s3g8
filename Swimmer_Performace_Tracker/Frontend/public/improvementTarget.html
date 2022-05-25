@@ -1,0 +1,86 @@
+<!-- comparison chart
+qualifiying time? how far away
+improvemen chart -->
+
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js" integrity="sha512-GMGzUEevhWh8Tc/njS0bDpwgxdCJLQBWG3Z2Ct+JGOpVnEmjvNx6ts4v6A2XJf1HOrtOsfhv3hBKpK9kE5z8AQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>Data Hub</title>
+</head>
+
+<body>
+  <div id="improvementTargetPage" class="container page-container">
+
+    <!-- <div class = "row">
+      <div class = "col-4"></div>
+      
+    </div> -->
+    <div class = "row">
+      <div id = "progressChartctn" class = "col-5">
+        <div id = "pcLabel"> This week </div>
+        <canvas id="progressChart" height="400" width="600" style="box-sizing: border-box; height: 300px; width: 500px;"></canvas>
+      </div>
+      <div id = "qtTable" class = "col-4">
+        <table class="table table-dark">
+          <thead>
+            <tr>
+              <th class = "head" scope="col">#</th>
+              <th class = "head" scope="col">Your time</th>
+              <th class = "head" scope="col">Qualifying Time</th>
+              <th class = "head" scope="col">Meet Name</th>
+              <th class = "head" scope="col">Race Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+     
+    </div>
+    
+    <div id="meetname">
+      <label for="meetname"  class = "hastext">Choose Meet:</label>
+      <select name="Meet name" id="selectMeet" class="hastext form-select"></select>
+    </div>
+    <button id ="qtBtn" class = "btn Primary">Fastest time vs Qualifying</button>
+    
+   
+  </div>
+
+
+
+
+  
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/popper.js"></script>
+  <script src="scripts/bootstrap-material-design.js"></script>
+  <script>$("body").bootstrapMaterialDesign();</script>
+  <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
+  
+  <script src="/__/firebase/init.js"></script>
+  
+  <script src="scripts/main.js"></script>
+  
+</body>
+
+</html>

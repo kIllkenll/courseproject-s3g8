@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js" integrity="sha512-GMGzUEevhWh8Tc/njS0bDpwgxdCJLQBWG3Z2Ct+JGOpVnEmjvNx6ts4v6A2XJf1HOrtOsfhv3hBKpK9kE5z8AQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>Data Hub</title>
+</head>
+
+<body>
+  <div id = "goNext" >
+    <div id ="btnLabel" class = "row">Improvement & Target</div>
+    <div id ="nextPage">
+      <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-caret-right-fill row" viewBox="0 0 16 16">
+        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+      </svg>
+    </div>
+    
+  </div>
+  <div id="datahubPage" class="container row page-container">
+      
+    <div class = "chartHolder col-4">
+        <canvas id="barChart" height="300" width="300"></canvas>
+        <div id = "improvement" class = "hastext">Improvement Perctange: 
+            <div id = "perctange"></div>
+    
+        </div>
+    </div>
+
+    <div class = "tableHolder col-8">
+    
+        <div id = "searchContainer" class = "row">
+          <div class = "col-12">
+            <label for="racename"  class = "hastext">Choose Race:</label>
+            <select name="Race Name" id="racename" class="hastext form-select">
+    
+              <option value="men 200m medley">men 200m medley</option>
+              <option value="men 100m freestyle">men 100m freestyle</option>
+              <option value="men 50m freestyle">men 50m freestyle</option>
+              <option value="men 200m freestyle">men 200m freestyle</option>
+              <option value="men 100m butterfly">men 100m butterfly</option>
+              <option value="men 50m butterfly">men 50m butterfly</option>
+              <option value="mixed 4x100m medley relay">mixed 4x100m medley relay</option>
+              <option value="men 100m medley">men 100m medley</option>
+              <option value="men 4x100m medley relay">men 4x100m medley relay</option>
+              <option value="men 4x100m freestyle relay">men 4x100m freestyle relay</option>
+              <option value="men 200m butterfly">men 200m butterfly</option>
+              <option value="men 100m backstroke">men 100m backstroke</option>
+              <option value="men 100m breaststroke">men 100m breaststroke</option>
+              <option value="men 50m breaststroke">men 50m breaststroke</option>
+              <option value="mixed 4x100m freestyle relay">mixed 4x100m freestyle relay</option>
+              <option value="men 4x50m medley relay">men 4x50m medley relay</option>
+              <option value="men 50 freestyle">men 50 freestyle</option>
+              <option value="men 4x50m freestyle relay">men 4x50m freestyle relay</option>
+              <option value="mixed 4x50m medley relay">mixed 4x50m medley relay</option>
+              <option value="mixed 4x50m freestyle relay">mixed 4x50m freestyle relay</option>
+              <option value="men 4x200m freestyle relay">men 4x200m freestyle relay</option>
+              <option value="men 200m breaststroke">men 200m breaststroke</option>
+              <option value="men 200m backstroke">men 200m backstroke</option>
+              <option value="men 50m backstroke">men 50m backstroke</option>
+              <option value="men 100 backstroke">men 100 backstroke</option>
+              <option value="men 400m freestyle">men 400m freestyle</option>
+              <option value="men 800m freestyle">men 800m freestyle</option>
+              <option value="men 1500m freestyle">men 1500m freestyle</option>
+              <option value="men 400m medley">men 400m medley</option>
+              <option value="men 800 freestyle">men 800 freestyle</option>
+              <option value="men 50 butterfly">men 50 butterfly</option>
+            </select>
+            <!-- <input type="text" class="form-control col-8" id="racename" aria-describedby="oxygen" placeholder="Ex: men 100m medley"> -->
+
+
+            <!-- <button id = "raceDoc" class = "popup btn col-4">See types of race
+              <span class="popuptext" id="myPopup">
+                <ul>
+                  <li>men 200m medley</li>
+                  <li>men 100m freestyle</li>
+                  <li>men 50m freestyle</li>
+                  <li>men 200m freestyle</li>
+                  <li>men 100m butterfly</li>
+                  <li>men 50m butterfly</li>
+                  <li>mixed 4x100m medley relay</li>
+                  <li>men 100m medley</li>
+                  <li>men 4x100m medley relay</li>
+                  <li>men 4x100m freestyle relay</li>
+                  <li>men 200m butterfly</li>
+                  <li>men 100m backstroke</li>
+                  <li>men 100m breaststroke</li>
+                  <li>men 50m breaststroke</li>
+                  <li>mixed 4x100m freestyle relay</li>
+                  <li>men 4x50m medley relay</li>
+                  <li>men 50 freestyle</li>
+                  <li>men 4x50m freestyle relay</li>
+                  <li>mixed 4x50m medley relay</li>
+                  <li>mixed 4x50m freestyle relay</li>
+                  <li>men 4x200m freestyle relay</li>
+                  <li>men 200m breaststroke</li>
+                  <li>men 200m backstroke</li>
+                  <li>men 50m backstroke</li>
+                  <li>men 100 backstroke</li>
+                  <li>men 400m freestyle</li>
+                  <li>men 800m freestyle</li>
+                  <li>men 1500m freestyle</li>
+                  <li>men 400m medley</li>
+                  <li>men 800 freestyle</li>
+                  <li>men 50 butterfly</li>
+                </ul>
+
+              </span>
+            </button> -->
+
+            
+          </div>
+
+          <div class = "col-12">
+      
+            <label for="profSwimmer" class = "hastext"> Choose Professional Swimmer: </label>
+            <select name="professional Swimmer" id="profSwimmer" class="hastext form-select">
+              <option value=1>Caeleb Dressel</option>
+                <option value=2>Adam Peaty</option>
+                <option value=3>Ryan Murphy</option>
+                <option value=4>Sun Yang</option>
+                <option value=5>Ian Thorpe</option>
+                <option value=6>Ryan Lochte</option>
+                <option value=7>Michael	Phelps</option>
+                <option value=8>Kathleen Ledecky</option>
+                <option value=9>Lillia King</option>
+                <option value=10>Dana Vollmer</option>
+                <option value=11>Natalie Coughlin</option>
+                <option value=12>Katinka Hosszu</option>
+                <option value=13>Sarah Sjostrom</option>
+                <option value=14>Simone Manuel</option>
+            </select>
+
+            <button id = "search" class = "btn btn-primary hastext">Search</button>
+            <button type="button" id = "changeViewBtn" class="btn btn-dark hastext">Graph View</button>
+          </div>
+
+        </div>
+
+        
+  
+      <div id = "viewContainer">
+        <table id = "comparisonTable" style="width:100%" class="table">
+          <thead>
+            <div id = "title"class = " hastext row justify-content-center">Fastest vs Fastest</div>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col"  >Your race time</th>
+              <th id = "profTime" scope="col">Professional</th>
+              <th scope="col" >Meet Name</th>
+              <th scope="col" style="width:15%">Meet Date</th>
+              <th id = "mncol" scope="col"> Meet Name (professional) </th>
+              <th id = "mdcol" scope="col"> Meet Date (professional) </th>
+             
+            </tr>
+          </thead>
+          <tbody>
+            
+          </tbody>
+        </table>
+  
+        <div id = "chartContainer" >
+          <div class = "row justify-content-center"> 
+            <canvas id="comparisonChart" height="500" width="500" style="box-sizing: border-box; height: 400px; width: 500px;" class = "row justify-content-center"></canvas>
+          </div>
+          
+        </div>
+        </div>
+    </div>
+
+    
+
+    
+     
+
+  </div>
+
+
+  
+    
+    
+
+
+
+  
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/popper.js"></script>
+  <script src="scripts/bootstrap-material-design.js"></script>
+  <script>$("body").bootstrapMaterialDesign();</script>
+  <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
+  
+  <script src="/__/firebase/init.js"></script>
+  
+  <script src="scripts/main.js"></script>
+  
+</body>
+
+</html>
