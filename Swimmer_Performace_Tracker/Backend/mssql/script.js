@@ -13,8 +13,8 @@ DB.SQLConnect =  class{
         this.config = {
             server: 'titan.csse.rose-hulman.edu',
             database: 'S3G8_Project',
-            user: 'zhengy9',
-            password: 'Numberis14!',
+            user: '<your user>',
+            password: '<password>',
             options: {
                 trustedConnection: true,
                 encrypt: true,
