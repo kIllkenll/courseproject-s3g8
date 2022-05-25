@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Swimmer Performance Tracker</title>
+</head>
+
+
+
+<body>
+  <!-- <nav class="navbar navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">Swimmer Profile</a>
+  </nav> -->
+  <div id="trackerPage" class="container page-container justify-content-center ">
+    <div id = "inputContainer"  class = "">
+        <button id = "addBtn" class="open-button">Add Race</button>
+
+        <div class="form-popup" id="myForm">
+        <form class="form-container">
+            <div class = "row raceinp">
+                <div class = "col-6">
+                    <label for="raceName">Race Name:</label>
+                    <input type="text" class="form-control inp " id="raceName">
+                </div>
+                
+
+                <!-- <div class = "col-6">
+                    <label for="raceUnit">Race Unit:</label>
+                    <input type="text" class="form-control inp " id="raceUnit">
+                </div> -->
+
+                <div class = "col-6">
+                    <label for="raceTime">Race Time (mm:ss):</label>
+                    <input type="text" class="form-control inp " id="raceTime">
+                </div>
+
+                <div class = "col-6">
+                    <label for="meetName">Meet Name:</label>
+                    <input type="text" class="form-control inp " id="meetName">
+                </div>
+        
+                <div class = "col-6">
+                    <label for="meetDate">Meet Date (year-mm-dd):</label>
+                    <input type="text" class="form-control inp " id="meetDate">
+                </div>
+
+                
+            </div>
+            
+            <!-- <div class = "raceinp">
+                
+            </div> -->
+    
+            <!-- <div class = "raceinp">
+                <label for="raceTime">Race Time (mm:ss):</label>
+                <input type="text" class="form-control inp " id="raceTime">
+            </div>
+    
+            <div class = "raceinp">
+                <label for="meetName">Meet Name:</label>
+                <input type="text" class="form-control inp " id="meetName">
+            </div>
+    
+            <div class = "raceinp">
+                <label for="meetDate">Meet Date (year-mm-dd):</label>
+                <input type="text" class="form-control inp " id="meetDate">
+            </div> -->
+            <div class = "row justify-content-center">
+                <button type="button" id = "addRaceBtn" class="btn btn-outline-primary">Add Race</button>
+            </div>
+
+            <div class = "row justify-content-center">
+                <button type="button" id ="closeBtn" class="btn btn-outline-danger">Close</button>
+            </div>
+            
+            
+        </form>
+        </div>
+
+
+
+
+
+
+
+       
+
+        
+        
+    </div>
+     
+  </div>
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/popper.js"></script>
+  <script src="scripts/bootstrap-material-design.js"></script>
+  <script>$("body").bootstrapMaterialDesign();</script>
+  <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
+  <script src="/__/firebase/init.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
